@@ -31,9 +31,27 @@ ohmybash_install()
 {
 	bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 	rm /root/.bashrc
+	echo source ~/.config/bash/.bashrc > .bashrc
+}
+
+atuin_install()
+{
+	bash <(curl https://raw.githubusercontent.com/atuinsh/atuin/main/install.sh)
+    atuin import auto
 }
 
 config_install()
 {
-	
+	mkdir -p /root/tmp
+	cd /root/tmp
+	git clone https://github.com/philingood/serve-config.git
+	cp -r serve-config/.config /root/
+	cd /
+	rm -r /root/tmp
 }
+
+apt_install
+docker_install
+ohmybash_install
+atuin_install
+config_install
