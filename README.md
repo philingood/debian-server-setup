@@ -2,5 +2,5 @@
 
 ## installing
 ```bash
-bash -c "$(https://raw.githubusercontent.com/philingood/serve-config/main/debian-setup.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/philingood/serve-config/main/debian-setup.sh)"
 ```
