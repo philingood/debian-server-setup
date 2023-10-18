@@ -11,11 +11,4 @@ clone_repo()
     cd /
 }
 
-start_vpn()
-{
-    bash /root/VPN/build.sh
-    bash /root/VPN/start.sh
-}
-
 clone_repo
-start_vpn
