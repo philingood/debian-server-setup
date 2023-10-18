@@ -30,7 +30,7 @@ docker_install()
 ohmybash_install()
 {
 	bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
-	rm /root/.bashrc
+	mv /root/.bashrc /root/.bashrc.default
 	echo source ~/.config/bash/.bashrc > .bashrc
 }
 
