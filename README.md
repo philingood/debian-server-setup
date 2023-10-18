@@ -7,5 +7,5 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/philingood/debian-server
 ```
 ### docker vpn install
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/philingood/debian-server-setup/main/debian-setup.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/philingood/debian-server-setup/main/docker-vpn-setup.sh)"
 ```
